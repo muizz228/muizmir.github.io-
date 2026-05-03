@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile</title>
+<style>
+body {
+  background: #050a14;
+  color: #d1d5db;
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+}
+
+/* NAME */
+h1 {
+  color: #3b82f6;
+  font-size: 34px;
+  text-shadow: 0 0 10px #3b82f6;
+}
+
+/* CARD BOX */
+.card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #020617;
+}
+
+/* STATUS COLORS */
+.green { color: #00ff9c; }
+.red { color: #ff4d4d; }
+
+/* GLOW TEXT */
+.glow {
+  color: #00ff9c;
+  text-shadow: 0 0 8px #00ff9c;
+}
+
+/* BARS */
+.bar {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.bar div {
+  width: 22px;
+  height: 10px;
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+.bar .active {
+  background: #3b82f6;
+  box-shadow: 0 0 8px #3b82f6;
+}
+</style>
+</head>
+
+<body>
+
+<h1>YOUR NAME</h1>
+<p>Colonel / Deputy of APD • Server 1</p>
+
+<div class="card">
+<p class="glow">ADMIN STATUS: ACTIVE</p>
+</div>
+
+<div class="card">
+<h3>Operational Duty</h3>
+<div class="bar">
+<div></div><div></div><div></div><div></div>
+<div class="active"></div><div class="active"></div>
+<div class="active"></div><div class="active"></div>
+</div>
+</div>
+
+<div class="card">
+<h3>Communication</h3>
+<p class="red">❌ "Hi/Hello" [Waiting]</p>
+<p class="green">✅ "For works..." [Resolved]</p>
+</div>
+
+<div class="card">
+<h3>Experience</h3>
+<p>Curator of Police Department</p>
+<p>Administrator</p>
+<p>Colonel x1</p>
+<p>Lt Colonel x2</p>
+<p>Major x1</p>
+</div>
+
+</body>
+</html>
