@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile</title>
+<style>
+body {
+  background: #030712;
+  color: #e5e7eb;
+  font-family: monospace;
+  padding: 20px;
+}
+
+/* NAME */
+h1 {
+  color: #3b82f6;
+  font-size: 36px;
+  text-shadow: 0 0 15px #3b82f6;
+}
+
+/* CARD */
+.card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px #3b82f6;
+}
+
+/* STATUS */
+.green {
+  color: #22c55e;
+  text-shadow: 0 0 5px #22c55e;
+}
+
+.red {
+  color: #ef4444;
+}
+
+/* LOADING BAR */
+.bar {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.bar div {
+  width: 20px;
+  height: 10px;
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+.bar .on {
+  background: #3b82f6;
+  box-shadow: 0 0 8px #3b82f6;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+/* TITLE */
+h3 {
+  color: #60a5fa;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Abdul Mu'eez</h1>
+<p>Colonel • Deputy APD • Server 1</p>
+
+<div class="card">
+<p class="green">● ADMIN STATUS: ACTIVE</p>
+</div>
+
+<div class="card">
+<h3>Operational Duty</h3>
+<div class="bar">
+<div></div><div></div><div></div><div></div>
+<div class="on"></div><div class="on"></div>
+<div class="on"></div><div class="on"></div>
+</div>
+</div>
+
+<div class="card">
+<h3>Communication</h3>
+<p class="red">❌ "Hi/Hello" → Delayed</p>
+<p class="green">✅ "Work related" → Instant</p>
+</div>
+
+<div class="card">
+<h3>Experience</h3>
+<p>Curator of Police Department</p>
+<p>Administrator</p>
+<p>Colonel x1</p>
+<p>Lt Colonel x2</p>
+<p>Major x1</p>
+</div>
+
+</body>
+</html>
